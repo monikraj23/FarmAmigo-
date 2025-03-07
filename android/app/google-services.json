@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1092264039547",
+    "project_id": "agpj-1faf2",
+    "storage_bucket": "agpj-1faf2.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1092264039547:android:20e7a9c215512e1cf93ede",
+        "android_client_info": {
+          "package_name": "com.example.agpj"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAZJlfwkVSIhmisOhdXQ08A4Mpf4kRtBzE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
