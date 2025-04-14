@@ -1,34 +1,31 @@
 name: Build Flutter APK
-
 on:
   push:
     branches:
-      - main  # You can modify this to any branch you want to trigger the workflow on, e.g., 'dev'
-
+      - main
 jobs:
   build:
-    runs-on: ubuntu-latest  # Or use 'macos-latest' if you prefer macOS for the build environment
-
+    runs-on: ubuntu-latest
     steps:
-      # Step 1: Set up Flutter version
       - name: Set up Flutter
         uses: subosito/flutter-action@v2
         with:
-          flutter-version: '3.24.3'  # Specify your desired Flutter version here
-
-      # Step 2: Checkout the code from the repository
+          flutter-version: '3.24.3'
       - name: Checkout code
         uses: actions/checkout@v3
-
-      # Step 3: Install dependencies
       - name: Install dependencies
         run: flutter pub get
-
-      # Step 4: Build APK in release mode
+      - name: Analyze code
+        run: flutter analyze --no-fatal-infos --no-fatal-warnings
       - name: Build APK
         run: flutter build apk --release
-
-      # Step 5: Upload APK as an artifact for download
+      - name: Upload to Firebase App Distribution
+        uses: wzieba/Firebase-Distribution-Github-Action@v1
+        with:
+          appId: ${{ secrets.FIREBASE_APP_ID }}
+          token: ${{ secrets.FIREBASE_TOKEN }}
+          file: build/app/outputs/flutter-apk/app-release.apk
+          groups: testers
       - name: Upload APK Artifact
         uses: actions/upload-artifact@v4
         with:
