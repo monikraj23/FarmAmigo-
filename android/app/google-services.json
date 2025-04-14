@@ -1,21 +1,21 @@
 {
   "project_info": {
-    "project_number": "1092264039547",
-    "project_id": "agpj-1faf2",
-    "storage_bucket": "agpj-1faf2.firebasestorage.app"
+    "project_number": "832087166850",
+    "project_id": "farmamigo-c526d",
+    "storage_bucket": "farmamigo-c526d.firebasestorage.app"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:1092264039547:android:20e7a9c215512e1cf93ede",
+        "mobilesdk_app_id": "1:832087166850:android:e65cdac0f0db5908fe499b",
         "android_client_info": {
-          "package_name": "com.example.agpj"
+          "package_name": "com.monikraj.agpj"
         }
       },
       "oauth_client": [],
       "api_key": [
         {
-          "current_key": "AIzaSyAZJlfwkVSIhmisOhdXQ08A4Mpf4kRtBzE"
+          "current_key": "AIzaSyCz-J1yhYN-KuVLC5Z7nFajc5hrv3Ncb0Y"
         }
       ],
       "services": {
