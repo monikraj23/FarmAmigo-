@@ -25,11 +25,9 @@ jobs:
           appId: ${{ secrets.FIREBASE_APP_ID }}
           serviceCredentialsFileContent: ${{ secrets.GOOGLE_APPLICATION_CREDENTIALS }}
           file: build/app/outputs/flutter-apk/app-release.apk
-          groups: testers
+          groups: DEVOPS_TESTING
       - name: Upload APK Artifact
         uses: actions/upload-artifact@v4
         with:
           name: app-release.apk
           path: build/app/outputs/flutter-apk/app-release.apk
-
-
