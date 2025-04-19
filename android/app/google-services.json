@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "832087166850",
+    "project_id": "farmamigo-c526d",
+    "storage_bucket": "farmamigo-c526d.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:832087166850:android:e65cdac0f0db5908fe499b",
+        "android_client_info": {
+          "package_name": "com.monikraj.agpj"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCz-J1yhYN-KuVLC5Z7nFajc5hrv3Ncb0Y"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

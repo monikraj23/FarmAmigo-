@@ -1,0 +1,43 @@
+name: Android Firebase Distribution
+
+on:
+  push:
+    branches:
+      - main # or your deployment branch
+
+jobs:
+  build-and-distribute:
+    name: Build & Distribute APK
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Setup Java
+        uses: actions/setup-java@v3
+        with:
+          distribution: 'temurin'
+          java-version: '17'
+
+      - name: Setup Flutter
+        uses: subosito/flutter-action@v2
+        with:
+          flutter-version: '3.13.0' # or your version
+
+      - name: Install dependencies
+        run: flutter pub get
+
+      - name: Build APK
+        run: flutter build apk --release
+
+      - name: Write service account JSON
+        run: echo "${{ secrets.FIREBASE_TOKEN_JSON }}" > firebase-service-account.json
+
+          - name: Distribute to Firebase
+        uses: wzieba/Firebase-Distribution-Github-Action@v1
+        with:
+          appId: ${{ secrets.FIREBASE_APP_ID }}
+          serviceCredentialsFile: firebase-service-account.json
+          groups: testers
+          file: build/app/outputs/flutter-apk/app-release.apk
