@@ -3,7 +3,7 @@ name: Android Firebase Distribution
 on:
   push:
     branches:
-      - main # or your deployment branch
+      - main
 
 jobs:
   build-and-distribute:
@@ -18,12 +18,12 @@ jobs:
         uses: actions/setup-java@v3
         with:
           distribution: 'temurin'
-          java-version: '17'
+          java-version: '23.o.2'
 
       - name: Setup Flutter
         uses: subosito/flutter-action@v2
         with:
-          flutter-version: '3.13.0' # or your version
+          flutter-version: '3.29.3' # or your version
 
       - name: Install dependencies
         run: flutter pub get
