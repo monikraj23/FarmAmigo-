@@ -22,6 +22,6 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.lightBlue,
       ),
       home: LoginMobile(), // Updated to point to LoginMobile
-    ); // This is the main entry point of the app
+    );
   }
 }
