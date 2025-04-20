@@ -1,0 +1,2 @@
+C:/Users/Admin/Projects/FarmAmigo-/android/app/.cxx/RelWithDebInfo/2w2f642n/x86/CMakeFiles/edit_cache.dir
+C:/Users/Admin/Projects/FarmAmigo-/android/app/.cxx/RelWithDebInfo/2w2f642n/x86/CMakeFiles/rebuild_cache.dir

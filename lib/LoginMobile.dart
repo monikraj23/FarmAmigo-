@@ -25,7 +25,7 @@ class LoginMobile extends StatelessWidget {
               ),
             ),
             const SizedBox(height: 25),
-            Container(
+            SizedBox(
               width: 300,
               child: TextField(
                 controller: phoneController,
@@ -46,7 +46,7 @@ class LoginMobile extends StatelessWidget {
             const SizedBox(height: 15),
             ElevatedButton(
               style: ButtonStyle(
-                backgroundColor: MaterialStatePropertyAll<Color>(Colors.black),
+                backgroundColor: WidgetStatePropertyAll<Color>(Colors.black),
               ),
               onPressed: () async {
                 final phoneNumber = phoneController.text.trim();

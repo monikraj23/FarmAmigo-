@@ -1,0 +1,2 @@
+C:/Users/Admin/Projects/FarmAmigo-/android/app/.cxx/RelWithDebInfo/2w2f642n/armeabi-v7a/CMakeFiles/edit_cache.dir
+C:/Users/Admin/Projects/FarmAmigo-/android/app/.cxx/RelWithDebInfo/2w2f642n/armeabi-v7a/CMakeFiles/rebuild_cache.dir

@@ -5,7 +5,7 @@ import 'Homefinal.dart';
 class LoginOTP extends StatefulWidget {
   final String verificationId;
 
-  LoginOTP({super.key, required this.verificationId});
+  const LoginOTP({super.key, required this.verificationId});
 
   @override
   _LoginOTPState createState() => _LoginOTPState();
@@ -32,7 +32,7 @@ class _LoginOTPState extends State<LoginOTP> {
               ),
             ),
             const SizedBox(height: 25),
-            Container(
+            SizedBox(
               width: 300,
               child: TextField(
                 controller: otpController,
@@ -53,7 +53,7 @@ class _LoginOTPState extends State<LoginOTP> {
             const SizedBox(height: 15),
             ElevatedButton(
               style: ButtonStyle(
-                backgroundColor: MaterialStatePropertyAll<Color>(Colors.black),
+                backgroundColor: WidgetStatePropertyAll<Color>(Colors.black),
               ),
               onPressed: () async {
                 try {

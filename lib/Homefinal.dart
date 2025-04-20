@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:impciker/home_screen.dart';
 
 class HomeFinal extends StatelessWidget {
+  const HomeFinal({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
