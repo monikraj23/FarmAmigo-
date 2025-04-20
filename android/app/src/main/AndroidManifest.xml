@@ -1,7 +1,8 @@
-    <application>
+<application
     android:label="agpj"
-    android:name="io.flutter.app.FlutterApplication" <!-- Or leave it out if you don't have a custom application class -->
-    android:icon=<"@mipmap/ic_launcher">
+    android:name="io.flutter.app.FlutterApplication"
+    android:icon="@mipmap/ic_launcher">
+
     <activity
         android:name="com.monikraj.agpj.MainActivity"
         android:exported="true"
@@ -11,15 +12,17 @@
         android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
         android:hardwareAccelerated="true"
         android:windowSoftInputMode="adjustResize">
+        
         <meta-data
             android:name="io.flutter.embedding.android.NormalTheme"
-            android:resource="@style/NormalTheme"
-        />
+            android:resource="@style/NormalTheme" />
+        
         <intent-filter>
             <action android:name="android.intent.action.MAIN"/>
             <category android:name="android.intent.category.LAUNCHER"/>
         </intent-filter>
     </activity>
+
     <meta-data
         android:name="flutterEmbedding"
         android:value="2" />
